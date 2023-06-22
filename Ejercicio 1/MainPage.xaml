@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_1.MainPage">
+
+    <ScrollView BackgroundColor="Lavender">
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="inver.png"
+                HeightRequest="250"
+                HorizontalOptions="Center" />
+            
+            <Label Text="Ejercicio 1" TextColor="Green" FontAttributes="Italic" FontSize="Subtitle" HorizontalOptions="Center"/>
+            <Entry x:Name="datoA" Placeholder="Digite un número" TextColor="BlueViolet" TextTransform="None"/>
+            <Entry x:Name="datoB" Placeholder="Digite un número" TextColor="BlueViolet" TextTransform="None"/>
+            <Entry x:Name="datoC" Placeholder="Digite un número" TextColor="BlueViolet" TextTransform="None"/>
+            <Entry x:Name="datoD" Placeholder="Digite un número" TextColor="BlueViolet" TextTransform="None"/>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Ver resultado"
+                BackgroundColor="Navy"
+                TextColor="MistyRose"
+                Clicked="CounterBtn_Clicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
